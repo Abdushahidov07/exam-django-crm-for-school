@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style_home.css' %}">
+    <title>Домашняя страница ученика</title>
+</head>
+<body>
+    <div class="line">
+        <div class="log">
+            <img  class="foto" src="{% static "logo_trial-removebg-preview.jpg" %}" alt="">
+        </div>
+        <h1>Главная страница</h1>
+        <div class="butt">
+            <a href="{% url 'home' %}"><button>Главная</button></a>
+            <a href="{% url 'grabe' %}"><button>Оценки</button></a>
+            <a href="{% url 'raspisania' %}"><button>Расписания</button></a>
+            <a href="{% url 'profile' %}"><button>Профиль</button></a>
+            <a href="{% url 'login' %}"><button>Выход</button></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="info">
+            <img class="foto2" src="{% static "profile.jpg" %}" alt="">
+            <div class="text">
+                <h1>Информация о ученике</h1>   
+                <p><span>Имя: </span>Сунатуло</p>
+                <p><span>Фамилия: </span>Ибрагимов</p>
+                <p><span>Класс: </span>11-А</p>
+                <p><span>Дата рождения: </span>31 ноябрь 2007 год</p>  
+            </div>
+        </div>
+            <div class="info1">
+                <div class="text1">
+                    <h1>Оценки за сегодня ученика</h1>   
+                    <p><span>Математика: </span>5</p>
+                    <p><span>Русский: </span>5</p>
+                    <p><span>Госудраственый язык: </span>5</p>
+                    <p><span>Химия: </span>4</p>  
+                </div>
+            </div>
+            
+            <div class="info1">
+                <div class="text1">
+                    <h1>Новости  в школе!</h1>   
+                    <p>Сегодня утром будет выступления старших классов в честь 9 мая !</p>
+                    <p>После уроков будет собрание директор проведет лекцию !!</p>
+                    <p>И на последок поздравляю вас с днем Победы!</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

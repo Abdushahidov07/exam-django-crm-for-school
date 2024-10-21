@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style_grabe.css' %}">
+    <title>Дневник ученика</title>
+</head>
+<body>
+    <div class="line">
+        <div class="log">
+            <img  class="foto" src="{% static "logo_trial-removebg-preview.jpg" %}" alt="">
+        </div>
+        <h1>Оценки за эту неделю </h1>
+        <div class="butt">
+            <a href="{% url 'home' %}"><button>Главная</button></a>
+            <a href="{% url 'grabe' %}"><button>Оценки</button></a>
+            <a href="{% url 'raspisania' %}"><button>Расписания</button></a>
+            <a href="{% url 'profile' %}"><button>Профиль</button></a>
+            <a href="{% url 'login' %}"><button>Выход</button></a>
+        </div>
+    </div>
+    
+    <form action="">
+        <table>
+            <tr>
+                <th rowspan="2">Html level</th>
+                <th colspan="2">12.07.2024</th>
+                <th colspan="2">13.07.2024</th>
+                <th colspan="2">14.07.2024</th>
+                <th colspan="2">15.07.2024</th>
+                <th colspan="2">16.07.2024</th>
+                <th colspan="4">End of Week</th>
+            </tr>
+            <tr>
+                <td>Att</td>
+                <td>Score</td>
+                <td>Att</td>
+                <td>Score</td>
+                <td>Att</td>
+                <td>Score</td>
+                <td>Att</td>
+                <td>Score</td>
+                <td>Att</td>
+                <td>Score</td>
+                <td>Att</td>
+                <td>bonus</td>
+                <td>exam</td>
+                <td>sum</td>
+            </tr>
+            <tr>
+                <td class="name">1.Математика</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select class="sel" name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">100</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">2.История</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">97</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">3.Гоеграфия</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">94</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">4.Государственный язык</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">94</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">5.Русский язык</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">90</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">6.Химия</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">90</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">7.Физра</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="green">90</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">8.Литература</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="yeolow">85</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">9.Эканомика</td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <select name="" id="">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                </td>
+                <td><input type="checkbox"></td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <input type="number">
+                </td>
+                <td>
+                    <span class="red">45</span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
